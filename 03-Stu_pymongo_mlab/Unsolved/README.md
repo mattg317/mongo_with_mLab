@@ -6,7 +6,7 @@
 
 * For each number of favorite movies, ask the user to name one.
 
-* Store the results in side a dictionary.
+* Store the results inside a dictionary.
 
 * Store the dictionary into an mLab hosted database using pymongo.
 

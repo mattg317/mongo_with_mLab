@@ -1,21 +1,17 @@
 from pymongo import MongoClient
 
-client = MongoClient('mongodb://admin:DataRocks!@ds243285.mlab.com:43285/heroku_lm19wcqp')
+client = MongoClient("mongodb://admin:DataRocks!@ds243295.mlab.com:43295/heroku_hs5242f2")
 
-# Create a database
-db = client.heroku_lm19wcqp
+db = client.heroku_hs5242f2
 
-# Create a collection
-new_collection = db.new_collection
+another_collection = db.another_collection
 
-# # Create a document
-sample_doc = {"author": 'Matt',
-               "favorite_language": "Python",
-               "hobbies": ["lifting", "coding", "rugby"]}
-#
-# # Insert document into collection
-new_collection.insert_one(sample_doc)
-#
+sample_doc = {"author": "Matt",
+			"favorite language": "Python",
+			"hobbies": ["coding", "music", "rugby"]}
+
+another_collection.insert_one(sample_doc)
+
 import pprint
-for post in new_collection.find():
-    pprint.pprint(post)
+for post in another_collection.find():
+	pprint.pprint(post)
